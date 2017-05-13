@@ -1,7 +1,7 @@
 {
-  "name": "turbo-git-starter-generator",
-  "version": "0.2.1",
-  "description": "Generator for a sub turbo-git module",
+  "name": "envinator",
+  "version": "0.1.0",
+  "description": "NPM module enviroment generator",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -16,22 +16,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/labs-js/turbo-git-starter-generator.git"
+    "url": "git+https://github.com/sfabrizio/envinator.git"
   },
   "bin": {
-    "turbo-generator": "bin/cli.js"
+    "envinator": "bin/cli.js"
   },
   "dependencies": {
-    "colors": "^1.1.2",
     "commander": "^2.9.0",
     "figlet": "^1.2.0",
     "inquirer": "^1.2.3",
     "shelljs": "^0.7.5"
   },
-  "author": "lab-js <https://github.com/labs-js>",
+  "keywords": [
+    "envinator",
+    "generator",
+    "npm package"
+  ],
+  "author": "Samuel Fabrizio  <samuelfabrizio@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/labs-js/turbo-git-starter-generator/issues"
+    "url": "https://github.com/sfabrizio/envinator/issues"
   },
-  "homepage": "https://github.com/labs-js/turbo-git-starter-generator#readme"
+  "homepage": "https://github.com/sfabrizio/envinator#readme"
 }
