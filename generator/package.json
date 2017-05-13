@@ -17,16 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/labs-js/PACKAGE_NAME.git"
+    "url": "git+https://github.com/GITHUB_NAMESPACE/PACKAGE_NAME.git"
   },
   "keywords": [
-    "turbo-git",
-    "git"
+    "envinator",
+    "npm package"
   ],
-  "author": "lab-js <https://github.com/labs-js>",
+  "author": "AUTHOR_NAME",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/labs-js/PACKAGE_NAME/issues"
+    "url": "https://github.com/GITHUB_NAMESPACE/PACKAGE_NAME/issues"
   },
-  "homepage": "https://github.com/labs-js/PACKAGE_NAME#readme"
+  "homepage": "https://github.com/GITHUB_NAMESPACE/PACKAGE_NAME#readme"
 }
