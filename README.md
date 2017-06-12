@@ -18,6 +18,7 @@ A environment code generator for work with npm packages.
   - `README` file with some relevant pkg info.. Badges for access and see the CIs: travis, codecov, bithound, codeclimate, etc. Also you will find a reference to the testing coverage tool.
   - `index.js` file.. Just the entry point to your project.
   - `test` just some tests of the boilerplate. These will run okey and the will generate the coverage files.. If you activate codecov you can just see the coverege on your README file.
+  - `LICENSE` MIT file.
   
 > This tool will generate your npm package boilerplate with some CI's already pointing to your enviroment, a testing library ready to run (jasmine-node) and a nice readme file with all this magic already there.
 > In order to activate the CI's for your project you only need go to the links on your generated readme file. With those link you can just activate the CIs that are free for open source projects ;)
