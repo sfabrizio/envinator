@@ -1,35 +1,45 @@
 {
   "name": "PACKAGE_NAME",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PACKAGE_DESC",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "nyc jasmine-node --verbose --captureExceptions test",
-    "test:watch": "nyc jasmine-node --verbose --autotest --captureExceptions test",
-    "coverage": "nyc report --reporter=text-lcov > coverage.json"
+    "test": "jasmine-node --verbose --captureExceptions test",
+    "test:watch": "npm test & onchange lib/*.js test/* -- npm test",
+    "coverage": "nyc report --reporter=text-lcov > coverage.json",
+    "lint": "eslint lib test bin index.js",
+    "lint:fix": "eslint lib test bin index.js --fix",
+    "lint:watch": "npm run lint && onchange lib/*.js test/*.js index.js -- npm run lint",
+    "precommit": "lint-staged",
+    "prepush": "npm test"
   },
   "dependencies": {
+    "userhome": "^1.0.0"
   },
   "devDependencies": {
+    "eslint": "^4.0.0",
+    "husky": "^0.13.4",
     "jasmine-node": "^1.14.5",
-    "nyc": "^8.1.0"
+    "lint-staged": "^4.0.0",
+    "nyc": "^11.0.2",
+    "onchange": "^3.2.1"
   },
   "engines": {
-    "node": "7"
+    "node": "6"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GITHUB_NAMESPACE/PACKAGE_NAME.git"
+    "url": "git+https://bitbucket.realtimegaming.com/projects/IT/repos/PACKAGE_NAME.git"
   },
   "keywords": [
-    "envinator",
-    "npm package"
+    "techona",
+    "Games Team"
   ],
   "author": "AUTHOR_NAME",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GITHUB_NAMESPACE/PACKAGE_NAME/issues"
+    "url": "https://bitbucket.realtimegaming.com/projects/IT/repos/PACKAGE_NAME.git/issues"
   },
-  "homepage": "https://github.com/GITHUB_NAMESPACE/PACKAGE_NAME#readme"
+  "homepage": "https://bitbucket.realtimegaming.com/projects/IT/repos/PACKAGE_NAME.git/readme"
 }
