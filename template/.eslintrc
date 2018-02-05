@@ -1,7 +1,7 @@
 {
-  "ecmaFeatures": {
-    "globalReturn": true,
-    "modules": true
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
   "extends": [
     "eslint:recommended"

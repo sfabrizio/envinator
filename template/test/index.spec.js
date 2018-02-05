@@ -1,7 +1,7 @@
-var indexFile = require('../index');
+const indexFile = require('../index');
 
-describe('index', function() {
-    it('should return a function', function() {
+describe('index', () => {
+    it('should return a function', () => {
         expect(typeof indexFile).toBe('function');
     });
 });
