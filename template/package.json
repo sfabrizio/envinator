@@ -1,6 +1,6 @@
 {
   "name": "PACKAGE_NAME",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "PACKAGE_DESC",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "coverage": "nyc report --reporter=text-lcov > coverage.json",
     "lint": "eslint lib test bin index.js",
     "lint:fix": "eslint lib test bin index.js --fix",
-    "lint:watch": "npm run lint && onchange lib/*.js test/*.js index.js -- npm run lint",
+    "lint:watch": "npm run lint && onchange lib/*.js test/*.js ./index.js -- npm run lint",
     "precommit": "lint-staged",
     "prepush": "npm test"
   },
@@ -35,7 +35,6 @@
     "url": "git+https://bitbucket.realtimegaming.com/projects/IT/repos/PACKAGE_NAME.git"
   },
   "keywords": [
-    "techona",
     "Games Team"
   ],
   "author": "AUTHOR_NAME",

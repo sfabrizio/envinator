@@ -1,14 +1,17 @@
 {
+  "ecmaFeatures": {
+    "globalReturn": true,
+    "modules": true
+  },
   "parserOptions": {
-    "ecmaVersion": 6,
     "sourceType": "module"
   },
   "extends": [
     "eslint:recommended"
   ],
   "env": {
-    "browser": true,
-    "es6": false,
+    "browser": false,
+    "es6": true,
     "node": true
   },
   "globals": {
@@ -49,7 +52,7 @@
     "keyword-spacing": 1,
     "space-before-function-paren": [0, "never"],
     "space-before-blocks": [1, "always"],
-    "one-var": [1, "always"],
+    "one-var": [0, "always"],
     "vars-on-top": 1,
     "yoda": [1, "never"],
     "new-cap": 1
