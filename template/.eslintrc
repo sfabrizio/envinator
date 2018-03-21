@@ -1,16 +1,9 @@
 {
-  "ecmaFeatures": {
-    "globalReturn": true,
-    "modules": true
-  },
-  "parserOptions": {
-    "sourceType": "module"
-  },
   "extends": [
     "eslint:recommended"
   ],
   "env": {
-    "browser": false,
+    "browser": true,
     "es6": true,
     "node": true
   },
@@ -38,7 +31,7 @@
     "no-trailing-spaces": [1],
     "comma-dangle": [2, "never"],
     "block-scoped-var": 1,
-    "strict": [1, "function"],
+    "strict": [0, "function"],
     "indent": 1,
     "camelcase": [2, { "properties": "always" }],
     "curly": 1,
